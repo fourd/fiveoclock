@@ -1,0 +1,29 @@
+tzphp - A small php library for looking up time in remote timezones.
+Copyright (C) 2005 Donald Becker
+
+tzphp is a small php library using data from the Olson timezone database.
+The tz_localtime() function, acts like that of the localtime() php function.
+Two arguments are passed to tz_localtime(), a time, and a timezone name from 
+the Olson database. The returned array is NOT associative.  The array entries
+are as follows:
+
+  0 - seconds
+  1 - minutes
+  2 - hour
+  3 - day of the month
+  4 - month of the year, starting with 0 for January
+  5 - Years since 1900
+  6 - Day of the week
+  7 - Day of the year
+  9 - Is daylight savings time in effect
+
+Example usage:
+
+  <?php
+    include('tz.php');
+    $rtime = tz_localtime(time(), "America/Chicago");
+    echo sprintf("%02d/%02d/%d %02d:%02d:%02d\n", 
+      $rtime[4]+1, $rtime[3], $rtime[5]+1900, $rtime[2], $rtime[1], $rtime[0]);
+  ?>
+
+See example.php for another example.

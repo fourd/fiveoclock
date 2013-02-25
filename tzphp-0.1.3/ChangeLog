@@ -1,0 +1,10 @@
+0.1.3 - Updated for latest timezone rules
+
+0.1.2 - Fixed tz_days_in_month returning incorrect value for march
+
+0.1.1 - Fixed tz_gmtime to account for DST in local timezone
+        Set dst entry (9) in returned array.
+        Updated example.php to show if zone is in DST
+        Corrected error in documention. (isdst index is 9 not 8)
+
+0.1.0 - Initial Release
