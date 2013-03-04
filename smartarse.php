@@ -68,15 +68,9 @@ $seconds_until_refresh = (((15 - (gmdate(i) % 15)) - 1) * 60) + (60 - gmdate(s))
  foreach ($potato as $value){
   array_push($places, $cc_arr[$value]);
  };
-<<<<<<< HEAD
- $unique_places = array_unique($places);
- $formatted_places = [];
- foreach ($unique_places as $this_u_place){	
-=======
  $unique_places = array_unique($places);  
  $formatted_places = [];
  foreach ($unique_places as $this_u_place){
->>>>>>> cc378b5a0156e359a600373a46126bcadc11ab9e
   $this_f_place = ucwords(strtolower($this_u_place));
   array_push($formatted_places, $this_f_place);
  };
