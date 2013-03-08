@@ -1,4 +1,5 @@
 <?php
+ header('Content-Type: text/html; charset=UTF-8');
  include ("tzphp-0.1.3/tz.php");
  include ("cc.php");
  /* this bit generates the gmt modifier */

@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=UTF-8');
 $cc_arr = array();
 /** turns the csv into an associative array where the 2 letter code is the key and the name is the value
 *
