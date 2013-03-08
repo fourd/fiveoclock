@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="drink.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <meta http-equiv="refresh" content="<?php echo $seconds_until_refresh; ?>">
+        <meta charset="utf-8">
     </head>
     <body>
         <div id="content">
