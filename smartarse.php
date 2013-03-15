@@ -70,11 +70,6 @@ $seconds_until_refresh = (((15 - (gmdate(i) % 15)) - 1) * 60) + (60 - gmdate(s))
   array_push($places, $cc_arr[$value]);
  };
  $unique_places = array_unique($places);  
- $formatted_places = [];
- foreach ($unique_places as $this_u_place){
-  $this_f_place = ucwords(strtolower($this_u_place));
-  array_push($formatted_places, $this_f_place);
- };
- $placestr = implode(" - ", $formatted_places);
+ $placestr = implode(" - ", $places);
  $placestr = rtrim($placestr, "- ");
 ?> 
